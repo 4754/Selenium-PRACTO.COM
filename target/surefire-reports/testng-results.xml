@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="1" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-08-19T18:57:23Z" name="Suite" finished-at="2021-08-19T18:58:51Z" duration-ms="87399">
+    <groups>
+    </groups>
+    <test started-at="2021-08-19T18:57:23Z" name="Test" finished-at="2021-08-19T18:58:51Z" duration-ms="87399">
+      <class name="com.practo.testClasses.PractoTests">
+        <test-method signature="listOfhospitals()[pri:0, instance:com.practo.testClasses.PractoTests@1b7c473a]" started-at="2021-08-19T18:57:23Z" name="listOfhospitals" finished-at="2021-08-19T18:58:12Z" duration-ms="48864" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='c-omni-suggestion-item__content__title' and contains(text(),'Bangalore')]"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GAURAV', ip: '192.168.111.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\WINDOWS\TEMP\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:56149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f55106784f487441c9bfdef37006fdb
+*** Element info: {Using=xpath, value=//div[@class='c-omni-suggestion-item__content__title' and contains(text(),'Bangalore')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='c-omni-suggestion-item__content__title' and contains(text(),'Bangalore')]"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GAURAV', ip: '192.168.111.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\WINDOWS\TEMP\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:56149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f55106784f487441c9bfdef37006fdb
+*** Element info: {Using=xpath, value=//div[@class='c-omni-suggestion-item__content__title' and contains(text(),'Bangalore')]}
+at org.testng.Assert.fail(Assert.java:96)
+at com.practo.baseClasses.PageBaseClass.reportFail(PageBaseClass.java:169)
+at com.practo.pageClasses.HospitalsInCity.selectCity(HospitalsInCity.java:71)
+at com.practo.testClasses.PractoTests.listOfhospitals(PractoTests.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- listOfhospitals -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:com.practo.testClasses.PractoTests@1b7c473a]" started-at="2021-08-19T18:58:12Z" name="flushReports" finished-at="2021-08-19T18:58:13Z" duration-ms="1064" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="getTopCities()[pri:1, instance:com.practo.testClasses.PractoTests@1b7c473a]" started-at="2021-08-19T18:58:13Z" name="getTopCities" finished-at="2021-08-19T18:58:26Z" duration-ms="12719" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTopCities -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:com.practo.testClasses.PractoTests@1b7c473a]" started-at="2021-08-19T18:58:26Z" name="flushReports" finished-at="2021-08-19T18:58:27Z" duration-ms="894" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+        <test-method signature="fillForm(java.util.Hashtable)[pri:2, instance:com.practo.testClasses.PractoTests@1b7c473a]" started-at="2021-08-19T18:58:28Z" name="fillForm" data-provider="getData" finished-at="2021-08-19T18:58:50Z" duration-ms="22167" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Contact_no=7739951185, Organisation_name=lim.pvt, Name=Rahul, Organisation_size=<=500, Email_id=lim, Comment=Invalid Email_id}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[no such alert
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GAURAV', ip: '192.168.111.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f538cc41b439cbd1a4c35f33408471b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: no such alert
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GAURAV', ip: '192.168.111.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f538cc41b439cbd1a4c35f33408471b
+at org.testng.Assert.fail(Assert.java:96)
+at com.practo.baseClasses.PageBaseClass.reportFail(PageBaseClass.java:169)
+at com.practo.baseClasses.PageBaseClass.acceptAlert(PageBaseClass.java:77)
+at com.practo.pageClasses.EmployeeHealthPage.clickDemo(EmployeeHealthPage.java:99)
+at com.practo.testClasses.PractoTests.fillForm(PractoTests.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillForm -->
+        <test-method is-config="true" signature="flushReports()[pri:0, instance:com.practo.testClasses.PractoTests@1b7c473a]" started-at="2021-08-19T18:58:50Z" name="flushReports" finished-at="2021-08-19T18:58:51Z" duration-ms="721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flushReports -->
+      </class> <!-- com.practo.testClasses.PractoTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

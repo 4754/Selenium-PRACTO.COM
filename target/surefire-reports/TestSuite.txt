@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 89.201 s <<< FAILURE! - in TestSuite
+listOfhospitals(com.practo.testClasses.PractoTests)  Time elapsed: 48.874 s  <<< FAILURE!
+java.lang.AssertionError: 
+no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='c-omni-suggestion-item__content__title' and contains(text(),'Bangalore')]"}
+  (Session info: chrome=92.0.4515.159)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GAURAV', ip: '192.168.111.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\WINDOWS\TEMP\scoped_dir7...}, goog:chromeOptions: {debuggerAddress: localhost:56149}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4f55106784f487441c9bfdef37006fdb
+*** Element info: {Using=xpath, value=//div[@class='c-omni-suggestion-item__content__title' and contains(text(),'Bangalore')]}
+	at com.practo.testClasses.PractoTests.listOfhospitals(PractoTests.java:38)
+
+fillForm(com.practo.testClasses.PractoTests)  Time elapsed: 22.168 s  <<< FAILURE!
+java.lang.AssertionError: 
+no such alert
+  (Session info: chrome=92.0.4515.159)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'GAURAV', ip: '192.168.111.182', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.159, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\WINDOWS\TEMP\scoped_dir1...}, goog:chromeOptions: {debuggerAddress: localhost:61783}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 8f538cc41b439cbd1a4c35f33408471b
+	at com.practo.testClasses.PractoTests.fillForm(PractoTests.java:78)
+
